@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NUMBER1=200
-NUMBER2=196
+a1=2
+b2=198
 
-SUM=$((NUMBER1+NUMBER2))
+SUM=$((a1+b2))
 
 echo $SUM
