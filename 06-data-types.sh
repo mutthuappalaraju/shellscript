@@ -1,8 +1,8 @@
 #!/bin/bash
 
-a1=2
-b2=198
+a1=200
+b2=100
 
-SUM=$((a1+b2))
+DIV=$((a1/b2))
 
-echo $SUM
+echo $DIV
