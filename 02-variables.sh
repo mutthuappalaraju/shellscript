@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "RAMESH: hello SURESH,good morning"
 echo "SURESH: HI RAMESH,very good morning"
 echo "RAMESH: how are you SURESH"
