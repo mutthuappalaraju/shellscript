@@ -1,6 +1,8 @@
 #!/bin/bash
 ID=$(id -u)
 
+echo "$0"
+
 
 VALIDATE(){
     if [ $1 -ne 0 ]
