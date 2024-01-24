@@ -2,9 +2,10 @@
 
 ID=$(id -u)
 
-if [$ID -ne 00]
+if [$ID -ne 0]
 then
     echo "ERROR: : run this script root user"
+    exit 1
 
 else
     echo "you are the root user"
