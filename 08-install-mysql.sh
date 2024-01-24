@@ -13,13 +13,22 @@ fi
 
 yum install mysql -y
 
-if [$ID -ne 0]
+if [ $? -ne 0 ]
 then
-    echo "ERROR: : run this script root user"
+    echo "ERROR: : installing mysql failure"
     exit 1
 
 else
-    echo "you are the root user"
+    echo "installing mysql success"
 fi
 
 yum install git -y
+
+if [ $? -ne 0 ]
+then
+    echo "ERROR: : installing git failure"
+    exit 1
+
+else
+    echo "installing git success"
+fi
