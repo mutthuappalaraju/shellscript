@@ -1,7 +1,7 @@
 #!/bin/bash
 ID=$(id -u)
 
-echo "$0"
+echo "script name $0"
 
 
 VALIDATE(){
