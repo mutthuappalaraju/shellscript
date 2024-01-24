@@ -26,7 +26,7 @@ yum install git -y
 
 if [ $? -ne 0 ]
 then
-    echo "ERROR: : installing git failure"
+    echo "ERROR: : installing gittttttt failure"
     exit 1
 
 else
