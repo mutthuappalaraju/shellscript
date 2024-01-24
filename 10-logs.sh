@@ -31,10 +31,10 @@ else
     echo "root user"
 fi
 
-yum install mysqllllll -y &>> $LOGFILE
+yum install mysql -y &>> $LOGFILE
 
 VALIDATE $?  "installing MYSQL"
 
-yum install git -y &>> $LOGFILE
+yum install gittttt -y &>> $LOGFILE
 
 VALIDATE $?  "installing GIT"
