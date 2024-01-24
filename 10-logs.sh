@@ -3,11 +3,13 @@ ID=$(id -u)
 
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
+
+
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 
 
@@ -18,7 +20,7 @@ VALIDATE(){
         exit 1
 
     else
-        echo "$2  $G success $N"
+        echo "$2....$G success $N"
     fi
 }
 if [ $ID -ne 0 ]
