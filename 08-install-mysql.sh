@@ -11,22 +11,22 @@ else
     echo "you are the root user"
 fi
 
-yum install mysql -y
+yum install mysqlllll -y
 
 if [ $? -ne 0 ]
 then
-    echo "ERROR: : installing mysqllllllll failure"
+    echo "ERROR: : installing mysql flailure"
     exit 1
 
 else
     echo "installing mysql success"
 fi
 
-yum install git -y
+yum install gitttt -y
 
 if [ $? -ne 0 ]
 then
-    echo "ERROR: : installing gittttttt failure"
+    echo "ERROR: : installing git failure"
     exit 1
 
 else
