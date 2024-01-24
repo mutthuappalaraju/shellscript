@@ -31,7 +31,7 @@ else
     echo "root user"
 fi
 
-yum install mysql -y &>> $LOGFILE
+yum install mysqllllll -y &>> $LOGFILE
 
 VALIDATE $?  "installing MYSQL"
 
