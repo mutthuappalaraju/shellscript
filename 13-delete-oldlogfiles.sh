@@ -9,7 +9,7 @@ N="\e[0m"
 
 SOURCE_DIRECTORY=/tmp/shell-script.logs
 
-if ( -d $SOURCE_DIRECTORY )
+if ( ! -d $SOURCE_DIRECTORY )
 then    
     echo -e " $R source directory does not exist.....$N"
 fi
