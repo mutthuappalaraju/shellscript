@@ -17,5 +17,6 @@ do
     echo "username: $username"
     echo "user id: $user_id"
     echo "User Full name: $user_fullname"
+    echo "password: $password"
 
 done < $FILE
