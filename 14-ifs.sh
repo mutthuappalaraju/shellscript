@@ -7,9 +7,9 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ ! -f $file ]
+if [ ! -f $FILE ]
 then
-    echo -e "$R failure:$file doesnot exist..$N"
+    echo -e "$R failure: $FILE doesnot exist..$N"
 fi
 
 while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path
@@ -18,4 +18,4 @@ do
     echo "user id: $user_id"
     echo "User Full name: $user_fullname"
 
-done < $file
+done < $FILE
