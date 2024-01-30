@@ -12,10 +12,10 @@ then
     echo -e "$R failure:$file doesnot exist..$N"
 fi
 
-while IFS=":" read -r Username Password User_ID  Group ID User ID Info
+while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path
 do
     echo "username: $username"
-    echo "password: $password"
-    echo "user_id: $user_id"
+    echo "user id: $user_id"
+    echo "User Full name: $user_fullname"
 
 done < $file
