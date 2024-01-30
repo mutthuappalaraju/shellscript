@@ -7,7 +7,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if ( -f $file )
+if ( ! -f $file )
 then
     echo -e "$R failure:$file doesnot exist..$N"
 fi
