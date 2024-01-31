@@ -11,6 +11,6 @@ do
     
     if [ $usage -ge $DISK_THERSOULD ]
     then 
-        message+="high disk usage on $partition:$usage"
+        message+="high disk usage on $partition:$usage \n"
     fi
 done <<< $DISK_USAGE
