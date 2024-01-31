@@ -9,7 +9,7 @@ do
     usage=$( df -hT | grep -vE  'tmp|file' | awk '{print $3f}' | cut -d % -f1 )
     partition=$(echo $line  | awk '{print $1f}')
     
-    if [ $usage -ge $DISK_THERSOULD ]
+    if [ "$usage" -ge "$DISK_THERSOULD" ]
     then 
         message+="high disk usage on $partition:$usage \n"
     fi
