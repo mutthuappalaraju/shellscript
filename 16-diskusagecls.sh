@@ -5,9 +5,9 @@ DISK_THERSOULD=1
 MESSAGE=""
 
 while ifs= read line
-
 do 
-    usage=$( echo $line | awk '{print $6f}' | cut -d % -f1 )
+    usage=$( df -hT | grep -vE  'tmp|file' | awk '{print $3f}' | cut -d % -f1 )
+    
     if [ "$usage" -ge "$DISK_THERSOULD" ]
     then 
         echo "high disk usage"
